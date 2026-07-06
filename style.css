@@ -1,0 +1,100 @@
+/* Configurações Gerais para Acessibilidade */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #222222; /* Alto contraste */
+    line-height: 1.6;
+    padding: 10px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #004b8d; /* Azul escuro seguro */
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+}
+
+/* Botões de Acessibilidade */
+.acessibilidade {
+    margin-top: 20px;
+}
+
+.acessibilidade button {
+    background-color: #ffffff;
+    color: #004b8d;
+    border: 3px solid #ffffff;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.acessibilidade button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Conteúdo e Cartões de Dicas */
+main {
+    font-size: 1.4rem; /* Tamanho inicial padrão maior para facilitar a leitura */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cartao-dica {
+    background-color: white;
+    border-left: 10px solid #008577; /* Detalhe lateral verde para destaque */
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-dica h2 {
+    color: #004b8d;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.cartao-dica p {
+    margin-bottom: 10px;
+}
+
+/* Caixa de Alerta Visual */
+.alerta {
+    background-color: #ffebe6;
+    border: 2px solid #ff5c33;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.2rem;
+    color: #555555;
+    max-width: 800px;
+    margin: 0 auto;
+}

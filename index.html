@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Segurança Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Guia de Segurança na Internet</h1>
+        <p>Aprenda a navegar com cuidado e proteger seus dados!</p>
+        
+        <div class="acessibilidade">
+            <button onclick="alterarFonte(1)" aria-label="Aumentar tamanho do texto">A+ Aumentar Letra</button>
+            <button onclick="alterarFonte(-1)" aria-label="Diminuir tamanho do texto">A- Diminuir Letra</button>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        
+        <section class="cartao-dica">
+            <h2>1. Cuidado com Links Suspeitos</h2>
+            <p>Não clique em links enviados por desconhecidos no WhatsApp ou por e-mail. Bancos e empresas sérias não costumam pedir seus dados ou senhas através de mensagens.</p>
+            <div class="alerta">
+                <strong>Regra de Ouro:</strong> Na dúvida, não clique e ligue para um familiar ou para o número oficial do banco.
+            </div>
+        </section>
+
+        <section class="cartao-dica">
+            <h2>2. Crie Senhas Fortes</h2>
+            <p>Evite usar sua data de nascimento, nome de netos ou sequências simples como "123456". Tente misturar letras maiúsculas, minúsculas, números e símbolos (como @ ou #).</p>
+        </section>
+
+        <section class="cartao-dica">
+            <h2>3. Desconfie de Prêmios e Promoções</h2>
+            <p>Se você recebeu uma mensagem dizendo que ganhou um sorteio no qual não se inscreveu, ou que uma grande loja está dando presentes de graça, fique atento. Geralmente é um golpe para roubar dados.</p>
+        </section>
+
+        <section class="cartao-dica">
+            <h2>4. Código do WhatsApp</h2>
+            <p>Nunca envie para ninguém um código numérico que chegar por SMS no seu celular. Esse código dá acesso ao seu aplicativo e os golpistas podem usá-lo para pedir dinheiro aos seus contatos.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Navegar na internet é ótimo para conversar com a família e se divertir. Faça isso sempre com atenção!</p>
+    </footer>
+
+    <script>
+        function alterarFonte(direcao) {
+            const elemento = document.getElementById('conteudo');
+            const estiloInstancia = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+            const tamanhoAtual = parseFloat(estiloInstancia);
+            elemento.style.fontSize = (tamanhoAtual + (direcao * 2)) + 'px';
+        }
+    </script>
+</body>
+</html>
